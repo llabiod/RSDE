@@ -13,7 +13,7 @@ Format of input:
     lambda : parameter for |B-GQ||_F^2
     maxiter: maximum number of iterations.
     Simply run the code in matlab as below:
-    [B, G, F, M] = RSDE(W, k, lambda, maxiter);
+    [B, G, M] = RSDE(W, k, lambda, maxiter);
 
 # Usage Example: learning embedding B and clustering G from the Jaffe dataset
 
