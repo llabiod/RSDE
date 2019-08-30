@@ -2,6 +2,19 @@
 
 RSDE (an Matlab package), Matlab version : Matlab R2016b
 
+RSDE optimizes the following problem:
+
+    \min_{B’B=I, G \in{0,1}^(nxk), Q’Q=I} ||W-BM’||_F^2 + lambda*||B-GQ||_F²
+
+Format of input:
+
+    W: the input affinity matrix
+    k: number of clusters
+    lambda : parameter for |B-GQ||_F^2
+    maxiter: maximum number of iterations.
+    Simply run the code in matlab as below:
+    [B, G, F, M] = RSDE(W, k, lambda, maxiter);
+
 # Usage Example: learning embedding B and clustering G from the Jaffe dataset
 
 ## %%The Jaffe dataset is avaible in folder "Data" of the RSDE repository
