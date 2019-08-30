@@ -1,2 +1,2 @@
 # RSDE
-Robust Spectral Data Embedding
+Regularized Spectral Data Embedding
