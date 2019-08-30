@@ -19,9 +19,13 @@ labels=data.y;
 X = NormalizeFea(X,1);
 
 %% constructing graph similarity
-options.NeighborMode = 'KNN';  
+
+options.NeighborMode = 'KNN'; 
+
 options.WeightMode = 'HeatKernel';  %Cosine, HeatKernel, Binary
+
 options.k =5;
+
 options.t =1;
  
  W = constructW(X,options);
