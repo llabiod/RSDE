@@ -1,6 +1,6 @@
 # RSDE
-Regularized Spectral Data Embedding
-RSDE (an Matlab package)
+# Regularized Spectral Data Embedding
+# RSDE (an Matlab package)
 
 Usage Example: learning embedding B and clustering G from the Jaffe dataset
 
