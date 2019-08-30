@@ -4,7 +4,7 @@ RSDE (an Matlab package), Matlab version : Matlab R2016b
 
 # Usage Example: learning embedding B and clustering G from the Jaffe dataset
 
-%%The Jaffe dataset is avaible in folder "Data" of the RSDE repository
+## %%The Jaffe dataset is avaible in folder "Data" of the RSDE repository
 
 % loading data
 
