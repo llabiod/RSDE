@@ -6,7 +6,7 @@ RSDE (an Matlab package), Matlab version : Matlab R2016b
 
 ## %%The Jaffe dataset is avaible in folder "Data" of the RSDE repository
 
-% loading data
+### % loading data
 
 data=load('jaffe_213n_676d_10c.mat'); % number of clusters k=10
 
