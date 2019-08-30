@@ -4,7 +4,7 @@ RSDE (an Matlab package), Matlab version : Matlab R2016b
 
 RSDE optimizes the following problem:
 
-    \min_{B’B=I, G \in{0,1}^(nxk), Q’Q=I} ||W-BM’||_F^2 + lambda*||B-GQ||_F²
+    \min_{B’B=I, G \in{0,1}^(nxk), Q’Q=I} ||W-BM’||_F^2 + lambda*||B-GQ||_F^2
 
 Format of input:
 
