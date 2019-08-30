@@ -1,5 +1,4 @@
 # RSDE : Regularized Spectral Data Embedding
-# Regularized Spectral Data Embedding
 
 RSDE (an Matlab package), Matlab version : Matlab R2016b
 
