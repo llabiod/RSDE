@@ -60,12 +60,12 @@ gscatter(B(:,1),B(:,2),labels)
 title('\bfRSDE','FontSize', 20)
 
 -----------------------------------------------------------------------------------------------------------
-Authors
+# Authors
 
 Lazhar Labiod and  Mohamed Nadif
 
 Department of Computer Science, LIPADE,  Paris University
 
-Contact
+# Contact
 
 lazhar.labiod@parisdescartes.fr
