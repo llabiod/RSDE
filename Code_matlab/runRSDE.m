@@ -1,8 +1,8 @@
 %% Run RSDE
 % Matlab version : Matlab R2016b
 %% loading data
-%data=load('jaffe_213n_676d_10c.mat');% number of clusters k=10
-data=load('COIL20_1440n_1024d_20c.mat')%number of clusters k=20
+data=load('jaffe_213n_676d_10c.mat');% number of clusters k=10
+%data=load('COIL20_1440n_1024d_20c.mat')%number of clusters k=20
 X=data.X;
 labels=data.y;
 %% normalizing data
@@ -22,17 +22,8 @@ options.t =1;
  W = Dr*A*Dc;
 %clear A; clear Dr; clear  Dc;
 %% run RSDE
-k=20;maxiter=300;lambda=10^-9;
+k=10;maxiter=300;lambda=10^-9;
 [B,G,M] = RSDE(W, k,lambda,maxiter);
-%%
-[B,M] = RSDEbis(W, k,maxiter)
-%%
-[IDX, C] = kmeans(B, k) %returns the K cluster centroid locations in the K-by-P matrix C.
-%G = calculateR(B, Q, 0, 1);
-[RSDE_Performances] = ClusteringMeasure(labels, IDX');
-%% Clustering Measures returns accuracy nmi and purity
- Q=eye(k,k);
- G = calculateG(B, Q, 0, 1);
  %%
  [tmp idx]=max(G');
  [RSDE_Performances] = ClusteringMeasure(labels, idx');
